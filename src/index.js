@@ -12,17 +12,32 @@ if (condition) {
   console.log('No');
 }
 
-const number = 99;
+const number = 98;
 let result; // undefined
 
-if (number === 1) {
-  result = 'One';
-} else if (number === 99) {
-  result = 'Ninety-Nine';
-} else if (number === 1000) {
-  result = 'One Thousand';
-} else {
-  result = 'No Match';
+// if (number === 1) {
+//   result = 'One';
+// } else if (number === 99) {
+//   result = 'Ninety-Nine';
+// } else if (number === 1000) {
+//   result = 'One Thousand';
+// } else {
+//   result = 'No Match';
+// }
+
+switch (number) {
+  case 1:
+    result = 'One';
+    break;
+  case 99:
+    result = 'Ninety-nine';
+    break;
+  case 1000:
+    result = 'One Thousand';
+    break;
+  default:
+    result = 'N/A';
+    break;
 }
 
 console.log(result);
