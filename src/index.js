@@ -5,29 +5,22 @@ app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 // ----
 
-console.log(makeCar);
-console.log(makeCarExpression);
-console.log(makeCarArrow);
-console.log(makeCarArrowShorthand);
-
-//1: Function declaration -- hoisted
-function makeCar() {
-  console.log('Making a car...');
-}
-
-makeCar();
-
-//2: Function expression (anonymous or named) -- not hoisted
-const makeCarExpression = function myFunction() {};
-console.log(makeCarExpression.name);
-
-//3: Arrow function
-
-const makeCarArrow = () => {
-  console.log('Making car inside Arrow...');
+// ----
+const drink = {
+  id: 'xhs8Pla',
+  name: 'Lemonade',
+  price: 99,
+  getDrinkDetails() {
+    return `Drink: ${this.name} (${this.price})`;
+  },
+  'abc 123': 'I am the value!',
+  100: 'I am a number!'
 };
 
-makeCarArrow();
-
-const makeCarArrowShorthand = () => console.log('Short');
-makeCarArrowShorthand();
+const myId = 'id';
+console.log(drink.getDrinkDetails());
+console.log(drink[myId]);
+console.log(drink.name);
+console.log(drink.price);
+console.log(drink['abc 123']);
+console.log(drink[100]);
