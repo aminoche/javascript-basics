@@ -4,8 +4,12 @@ const app = document.getElementById('app');
 app.innerHTML = '<h1>JavaScript Basics</h1>';
 
 // ----
-
-console.log(typeof 99);
-console.log(Number(99) instanceof Number);
-console.log(new Number(99) instanceof Number);
-console.log(Object.prototype.toString.call().slice(8, -1)); //best way to check the type of something
+const flavor = 'yum';
+console.log(String.prototype);
+console.log('Pizza'.fontcolor('yellow'));
+console.log('Pizza is "good"!');
+console.log(`Pizza is "${flavor.toUpperCase()}"`);
+console.log(String(55 + 11), String(55 + '11'));
+console.log(String({ name: 'Pepperoni' }));
+console.log(String([1, 2, 3, 4]));
+console.log(new String(55).valueOf());
